@@ -17,8 +17,8 @@ function generatePassword() {
 
 
     // 1. prompt user for password length
-    var passwordLen = prompt("Enter length of password using a number, 8 - 128.");
-        // a. prompt can't be blank
+    passwordLen = prompt("Enter length of password using a number, 8 - 128.");
+    // a. prompt can't be blank
     if(passwordLen === "") {
         window.alert("Must enter content, cannot leave blank!");
     }
@@ -30,7 +30,6 @@ function generatePassword() {
     else if(passwordLen > 128) {
         window.alert("Password must not have more than 128 character! ");
     }
-    
     // 2. asks user for password criteria
     
     // a. capital letter?
